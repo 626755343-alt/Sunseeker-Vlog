@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8df" />
+    <meta name="description" content="一键抽取今日英文 Vlog 话题，马上开拍。" />
+    <meta property="og:title" content="Sunseeker 今日 Vlog" />
+    <meta property="og:description" content="一键抽取今日英文 Vlog 话题，马上开拍。" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF6B4A'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%23FFF4B8'/%3E%3Cpath d='M32 7v7M32 50v7M7 32h7M50 32h7M14.3 14.3l5 5M44.7 44.7l5 5M49.7 14.3l-5 5M19.3 44.7l-5 5' stroke='%23FFF4B8' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Sunseeker 今日 Vlog</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="brand" aria-label="Sunseeker 今日 Vlog">
+        <div class="sun-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="brand-name">Sunseeker</p>
+        <h1>今日 Vlog</h1>
+      </header>
+
+      <article class="prompt-card" aria-live="polite" aria-labelledby="prompt-title">
+        <div id="prompt-content"></div>
+        <button id="refresh-prompt" class="refresh-button" type="button">
+          <span aria-hidden="true">↻</span>
+          换一个话题
+        </button>
+      </article>
+
+      <p class="footer-note">不必准备，开口就拍。</p>
+    </main>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
+
